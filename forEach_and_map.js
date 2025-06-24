@@ -79,3 +79,22 @@
 // const str = shiftLetters("Ahkaa8sdKJ8dh");
 // console.log(str);
 
+// שאלה 7
+// function capitalize(string){
+//     let newStr = "";
+//     let isSpace = false;
+//     for (i in string) {
+//         if (string[i] === " ") {
+//             if (isSpace === false) isSpace = true;
+//             else if (isSpace === true) isSpace = false;
+//         }
+//         if (isSpace === true) {
+//             newStr += string[i]?.toString().toUpperCase();
+//         } else {
+//             newStr += string[i]
+//         }
+//     }
+//     return newStr
+// }
+// const str = capitalize("1Ah kaa8 sdKJ8d hlkds ksds dsldskd dsc skdldak dsfsa");
+// console.log(str);
