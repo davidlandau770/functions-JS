@@ -35,13 +35,14 @@
 // שאלה 4
 // function vowelCount(string){
 //     let obj = {};
-//     for (const i in string) {
-//         if (obj[string[i]]) {
-//             obj[string[i]] += 1;
+//     let arr = string.split('');
+//     arr.forEach(char => {
+//         if (obj[char]) {
+//             obj[char] += 1;
 //         } else {
-//             obj[string[i]] = 1
+//             obj[char] = 1
 //         }
-//     }
+//     });
 //     return obj
 // }
 // const obj = vowelCount("1Ahkaa8sdKJ8dh");
@@ -50,9 +51,10 @@
 // שאלה 5
 // function capitalize(string){
 //     let newStr = "";
-//     for (i in string) {
-//         newStr += string[i]?.toString().toUpperCase();
-//     }
+//     let arr = string.split('');
+//     arr.forEach(char => {
+//         newStr += char?.toString().toUpperCase();
+//     });
 //     return newStr
 // }
 // const str = capitalize("1Ahkaa8sdKJ8dh");
@@ -62,8 +64,9 @@
 // function shiftLetters(string){
 //     let ascii = "";
 //     let newStr = "";
-//     for (const i in string) {
-//         ascii = string[i]?.charCodeAt() - 1;
+//     let arr = string.split('');
+//     arr.forEach(char => {
+//         ascii = char?.charCodeAt() - 1;
 //         if (ascii === 64) {
 //             newStr += "Z"
 //         } else if (ascii === 96) {
@@ -73,28 +76,29 @@
 //         } else {
 //             newStr += String.fromCharCode(ascii);
 //         }
-//     }
+//     });
 //     return newStr
 // }
-// const str = shiftLetters("Ahkaa8sdKJ8dh");
+// const str = shiftLetters("Ahk1aa8sdKJ8dh");
 // console.log(str);
 
 // שאלה 7
 // function capitalize(string){
 //     let newStr = "";
 //     let isSpace = false;
-//     for (i in string) {
-//         if (string[i] === " ") {
+//     let arr = string.split('');
+//     arr.forEach(char => {
+//         if (char === " ") {
 //             if (isSpace === false) isSpace = true;
 //             else if (isSpace === true) isSpace = false;
 //         }
 //         if (isSpace === true) {
-//             newStr += string[i]?.toString().toUpperCase();
+//             newStr += char?.toString().toUpperCase();
 //         } else {
-//             newStr += string[i]
+//             newStr += char
 //         }
-//     }
+//     });
 //     return newStr
 // }
-// const str = capitalize("1Ah kaa8 sdKJ8d hlkds ksds dsldskd dsc skdldak dsfsa");
+// const str = capitalize("1ah kaa8 sdsa8d hlkds ksds dsldskd dsc skdldak dsfsa");
 // console.log(str);
